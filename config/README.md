@@ -1,0 +1,2 @@
+#描述
++ 注意文件的名称不是乱起的，例如上面的 config-single-client-dev.yml 和 config-single-client-prod.yml 这两个是同一个项目的不同版本，项目名称为 config-single-client， 一个对应开发版，一个对应正式版。config-eureka-client-dev.yml 和 config-eureka-client-prod.yml 则是另外一个项目的，项目的名称就是 config-eureka-client 。
