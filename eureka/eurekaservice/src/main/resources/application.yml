@@ -1,0 +1,20 @@
+server:
+  port: 20000
+spring:
+  application:
+      name: qhService
+  security:
+    basic:
+      enabeld: true
+    user:
+      name: wdl
+      password: wdl
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

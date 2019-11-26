@@ -1,0 +1,11 @@
+server:
+  port: 20001
+spring:
+  application:
+    name: qhClient
+eureka:
+  client:
+#    prefer-same-zone-eureka: true
+    serviceUrl:
+      defaultZone: http://wdl:wdl@localhost:20000/eureka/
+#      defaultZone: http://localhost:20000/eureka/
